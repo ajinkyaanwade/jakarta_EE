@@ -9,7 +9,7 @@ public class App1
 		{
 System.out.println("Implementation class is\t"+con.getClass()); 
 Statement st=con.createStatement();
-ResultSet rs=st.executeQuery(" select * from dept");
+ResultSet rs=st.executeQuery("select * from dept");
 while(rs.next())
 {
 	int no=rs.getInt("deptno");
