@@ -8,7 +8,7 @@ public class App1
 		try(Connection con=DriverManager.getConnection(ss,"root","root"))
 		{
 System.out.println("Implementation class is\t"+con.getClass()); 
-Statement st=con.createStatement();
+Statement st=co n.createStatement();
 ResultSet rs=st.executeQuery("select * from dept");
 while(rs.next())
 {
