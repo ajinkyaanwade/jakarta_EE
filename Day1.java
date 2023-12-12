@@ -12,7 +12,7 @@ Statement st=con.createStatement();
 ResultSet rs=st.executeQuery("select * from dept");
 while(rs.next())
 {
-	int no=rs.getIn t("deptno");
+	int no=rs.getInt("deptno");
 	String name=rs.getString("dname");
 	String add=rs.getString("loc");
 	System.out.println(no+"\t"+name+"\t"+add);
